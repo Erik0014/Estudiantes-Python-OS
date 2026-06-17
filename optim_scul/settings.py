@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'optim_scul.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'optimal_school',     # El nombre de tu BD
+        'USER': 'root',
+        'PASSWORD': 'admin123',       # La contraseña que acabas de poner
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
     }
 }
 
