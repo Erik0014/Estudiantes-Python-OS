@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'autenticacion',
+    'academico',
 ]
 
 MIDDLEWARE = [
@@ -79,7 +80,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'optimal_school',     # El nombre de tu BD
         'USER': 'root',
-        'PASSWORD': 'admin123',       # La contraseña que acabas de poner
+        'PASSWORD': '1234',       # La contraseña que acabas de poner
         'HOST': '127.0.0.1',
         'PORT': '3306',
     }
@@ -132,6 +133,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/dashboard/'
-LOGOUT_REIRECT_URL = '/login/'
+LOGOUT_REDIRECT_URL = '/login/'
 
 AUTH_USER_MODEL = 'autenticacion.Usuario'

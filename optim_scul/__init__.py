@@ -1,5 +1,5 @@
-import pymysql
-pymysql.install_as_MySQLdb()
+# import pymysql
+# pymysql.install_as_MySQLdb()
 
 from django.db.backends.mysql.base import DatabaseWrapper
 
