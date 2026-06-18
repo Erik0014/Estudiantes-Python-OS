@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard | Optimal School</title>
+    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+</head>
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+
+        <h2>Optimal School</h2>
+
+        <ul>
+            <li><a href="#">🏠 Inicio</a></li>
+            <li><a href="#">👨‍🎓 Estudiantes</a></li>
+            <li><a href="#">📚 Asignaturas</a></li>
+            <li><a href="#">📝 Notas</a></li>
+            <li><a href="#">📅 Horarios</a></li>
+            <li><a href="#">📊 Reportes</a></li>
+            <li><a href="{% url 'logout' %}">🚪 Salir</a></li>
+        </ul>
+
+    </aside>
+
+    <main class="content">
+
+        <h1>Dashboard Académico</h1>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>120</h3>
+                <p>Estudiantes</p>
+            </div>
+
+            <div class="card">
+                <h3>15</h3>
+                <p>Docentes</p>
+            </div>
+
+            <div class="card">
+                <h3>4.5</h3>
+                <p>Promedio</p>
+            </div>
+
+            <div class="card">
+                <h3>Ana López</h3>
+                <p>Mejor Estudiante</p>
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>

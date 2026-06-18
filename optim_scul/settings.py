@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'autenticacion',
+    'academico',
 ]
 
 MIDDLEWARE = [
@@ -133,5 +134,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/dashboard/'
 LOGOUT_REIRECT_URL = '/login/'
-
 AUTH_USER_MODEL = 'autenticacion.Usuario'
